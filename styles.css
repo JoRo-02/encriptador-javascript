@@ -17,13 +17,15 @@ header{
 .container{
     background-color: black;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    position:relative;
 }
 
 .cajas__texto{
     display: flex;
     flex-direction: row;
     gap: 80px;
+    align-items: center;
 }
 
 textarea{
@@ -33,26 +35,41 @@ textarea{
 }
 
 .texto__usuario{
-    width: 100rem;
-    border-radius: 32px;
-    margin: 2rem 0 0 7rem;
-    text-align: center;
+    width: 60vw;
+    height: 70vh;
     padding: 50px;
+    border-radius: 32px; 
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    
 }
 
 .texto__resultado{
    
-    width: 400px;
+    width: 25vw;
     border-radius: 32px;
-    height: 80vh;
+    height: 70vh;
     padding: 50px;
+    font-size: 24px;
     text-align: center;
-    margin-top: 2rem;
-    margin-right: 1rem;
+    position:absolute;
+    right: 25px;
+    top: 25px;
 }
 
 .texto__guia{
-    text-align: center;
+    position: absolute;
+    top:87%;
+    left:80px;
+    color:white;    
+}
+
+.contenedor__botones{
+    display:flex;
+    justify-content: center;
+    
+    
 }
 
 button{

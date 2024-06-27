@@ -12,24 +12,34 @@
     <img class="imagen__logo" src="./Assets/Logo.png" alt="logo de Alura">
 </header>
 
-
 <body>
 
     <div class="container">
        
-        <section class="cajas__texto">
-            <textarea class="texto__usuario" placeholder="Ingrese el texto aquí"></textarea>
-            <textarea class="texto__resultado" placeholder="Ingrese el texto aquí"></textarea>
+        <section class="area__encriptar">
+
+            <textarea class="texto__usuario" id="texto__usuario" placeholder="Ingrese el texto aquí"></textarea>  
+            <p class="texto__guia">Solo letras minúsculas y sin acentos</p>
+
+            <div class="botones">
+                <button class="boton__encriptar" id="boton__encriptar" onclick="encriptar()">Cifrar</button>
+                <button class="boton__desencriptar" id="boton__desencriptar" onclick="desencriptar()">Descifrar</button>
+            </div>
+  
         </section>
-       
-        <p class="texto__guia">Solo letras minúsculas y sin acentos</p>
-    
-        <button class="boton__encriptar">Cifrar</button>
-        <button class="boton__desencriptar">Descifrar</button>
-    
-        <img class="imagen__lupa" src="./Assets/simbolo-de-interfaz-de-codigo-de-busqueda-de-una-lupa-con-numeros-de-codigo-binario.png" alt="icono de una Lupa" width="150px">
+
+        <div class="area__resultado">
+        
+            <textarea class="texto__resultado" id="texto__resultado"></textarea> 
+            <h2 class="titulo__standby" id="titulo__standby">Ningún mensaje fue encontrado</h2>
+            <p class="mensaje__standby" id="mensaje__standby">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <img class="imagen__lupa" src="./Assets/simbolo-de-interfaz-de-codigo-de-busqueda-de-una-lupa-con-numeros-de-codigo-binario.png" alt="icono de una Lupa" width="150px">
+            
+        </div>
+  
+        
     </div>
-    
+
 </body>
 <footer></footer>
 </html>
