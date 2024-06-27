@@ -60,6 +60,41 @@ textarea{
     font-size: 12px;
 }
 
+.botones{
+    display: flex;
+    position: absolute;
+    width: 80%;
+    left:80px;
+    top:82%;
+    padding:1% 0;
+    gap: 24px;
+}
+
+.boton__encriptar {
+    justify-content: center;
+    padding: 2%;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 12px;
+    color: white;
+    width: 30%;
+    font-family: 'Ubuntu Sans Mono', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.boton__desencriptar{
+    justify-content: center;
+    padding: 2%;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 12px;
+    color: white;
+    width: 30%;
+    font-family: 'Ubuntu Sans Mono', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
 
 .texto__resultado{   
     width: 25vw;
@@ -71,26 +106,6 @@ textarea{
     position:absolute;
     right: 25px;
     top: 25px;
-}
-
-.botones{
-    display: flex;
-    position: absolute;
-    width: 80%;
-    left:80px;
-    top:82%;
-    padding:1% 0;
-    gap: 24px;
-}
-
-.boton__encriptar{
-    justify-content: center;
-    padding: 2%;
-   background-color: black;
-   border: 1px solid gray;
-   border-radius: 12px;
-   color:white;
-    width: 20%;
 }
 
 footer{
