@@ -1,3 +1,4 @@
 # encriptador-javascript
 
-Estado del projecto: En desarrollo...
+>[!NOTE]
+Proyecto en etapa de desarrollo.
