@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.cajas__texto{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+textarea{
+    background-color: black;
+    resize: none;
+    font-size: 40px;
+}
+
+.texto__usuario{
+    width: 100rem;
+    border-radius: 32px;
+    margin: 2rem 0 0 7rem;
+    text-align: center;
+    padding: 50px;
+}
+
+.texto__resultado{
+    width: 400px;
+    border-radius: 32px;
+    height: 80vh;
+    padding: 50px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button{
+    padding: 20px;
+    border-radius: 24px;
+    background-color: blue;
+    color: white;
+}
+
