@@ -1,17 +1,21 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 header{
     background-color: black;
     width: 100vw;
+    position:relative;
+}
+
+.imagen__logo{
+    position: relative;
+    right:1%;
+    margin-top: 1%;    
 }
 
 .container{
@@ -21,12 +25,6 @@ header{
     position:relative;
 }
 
-.cajas__texto{
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    align-items: center;
-}
 
 textarea{
     background-color: black;
@@ -40,13 +38,30 @@ textarea{
     padding: 50px;
     border-radius: 32px; 
     position: absolute;
-    top: 25px;
+    top: 1px;
     left: 80px;
-    
+    color:white;
+    font-family: 'Ubuntu Sans Mono',sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+ }
+
+ .texto__usuario::placeholder{
+    color:gray;
+ }
+
+ .texto__guia{
+    position: absolute;
+    top:80.5%;
+    left:80px;
+    color:gray;  
+    font-family: 'Ubuntu Sans Mono',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
 
-.texto__resultado{
-   
+
+.texto__resultado{   
     width: 25vw;
     border-radius: 32px;
     height: 70vh;
@@ -58,25 +73,24 @@ textarea{
     top: 25px;
 }
 
-.texto__guia{
+.botones{
+    display: flex;
     position: absolute;
-    top:87%;
+    width: 80%;
     left:80px;
-    color:white;    
+    top:82%;
+    padding:1% 0;
+    gap: 24px;
 }
 
-.contenedor__botones{
-    display:flex;
+.boton__encriptar{
     justify-content: center;
-    
-    
-}
-
-button{
-    padding: 20px;
-    border-radius: 24px;
-    background-color: blue;
-    color: white;
+    padding: 2%;
+   background-color: black;
+   border: 1px solid gray;
+   border-radius: 12px;
+   color:white;
+    width: 20%;
 }
 
 footer{
