@@ -71,7 +71,30 @@ textarea{
     font-family: 'Ubuntu Sans Mono',sans-serif;
     font-weight: 400;
     font-size: 12px;
+   
 }
+
+.vibrar{
+    animation: vibracion 0.10s 3;
+}
+
+@keyframes vibracion{
+    0%{
+        transform:translateX(0) ;
+        color:red;
+    }
+    40%{
+        transform: translateX(10px);
+        color:red;
+    }
+
+    100%{
+        transform: translateX(-10px);
+        color:red;
+        
+    }
+}
+
 
 .botones{
     display: flex;
@@ -189,8 +212,6 @@ textarea{
     font-size: 24px;
     color: var(--color_c);
 }
-
-
 
 
 

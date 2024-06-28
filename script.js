@@ -4,10 +4,19 @@
 
         let textoUsuario = document.getElementById("texto__usuario").value;
         let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>]/g;
+        let mensajeError= document.getElementById('texto__guia');
 
+        
         if(validacionCaracteres.test(textoUsuario)){
-            alert('bichiyal');
+
+            mensajeError.classList.remove("vibrar");
+            void mensajeError.offsetWidth;  
+            mensajeError.classList.add("vibrar");
+
+            
         }else{
+
+            mensajeError.classList.remove("vibrar");
 
             function reemplazarVocales(char) {
                 switch (char) {
