@@ -3,7 +3,7 @@
     function encriptar() {
 
         let textoUsuario = document.getElementById("texto__usuario").value;
-        let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>]/g;
+        let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>0-9]/g;
         let mensajeError= document.getElementById('texto__guia');
 
         
@@ -52,7 +52,7 @@
 
     function desencriptar(){
         let textoUsuarioEncriptado = document.getElementById("texto__usuario").value;
-        let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>]/g;
+        let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>0-9]/g;
         let mensajeError= document.getElementById('texto__guia');
 
         
