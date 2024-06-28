@@ -135,9 +135,9 @@ textarea{
 }
 
 .boton__desencriptar:hover,.boton__encriptar:hover{
-    padding: 1.5%;
-    width: 25.5%;
-    margin: 0.1%;
+    background-color: var(--color_b);
+    color:var(--color_a);
+    font-weight:bold;
 }
 
 
