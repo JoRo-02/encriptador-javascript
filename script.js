@@ -36,9 +36,9 @@
                 if(textoUsuario.length != 0){
                     
                     document.getElementById('texto__resultado').value =textoEncriptado;
-                    document.getElementById('imagen__lupa').remove();
-                    document.getElementById('titulo__standby').remove();
-                    document.getElementById('mensaje__standby').remove();
+                    document.getElementById('imagen__lupa').style.display = 'none';
+                    document.getElementById('titulo__standby').style.display ='none';
+                    document.getElementById('mensaje__standby').style.display ='none';
                 
                 }
         }
@@ -47,6 +47,17 @@
     
     function desencriptar(){
         alert("en proceso");
+    }
+
+
+    let icono = document.getElementById('imagen__lupa')
+
+    function limpiarTexto(){
+        document.getElementById('texto__resultado').value = "";
+        document.getElementById('imagen__lupa').style.display= 'block';
+        document.getElementById('titulo__standby').style.display= 'block';
+        document.getElementById('mensaje__standby').style.display= 'block';
+
     }
 
     
