@@ -136,7 +136,7 @@ textarea{
 
 
 
-.boton__desencriptar:hover,.boton__encriptar:hover,.limpiar:hover{
+.boton__desencriptar:hover,.boton__encriptar:hover,.clean:hover, .copy:hover{
     background-color: var(--color_b);
     color:var(--color_a);
     font-weight:bold;
@@ -198,6 +198,31 @@ textarea{
    
 }
 
+.copy{
+    padding: 2%;
+    font-size: 20px;
+    position: relative;
+    top: 104.5%;
+    left:20%;
+    background-color:black;
+    color:white;
+    border: 1px solid var(--color_b);
+    border-radius: 8px;
+    
+}
+
+.clean{
+    padding: 2%;
+    font-size: 20px;
+    position: relative;
+    top: 104.5%;
+    left:40%;
+    background-color:black;
+    color:white;
+    border: 1px solid var(--color_b);
+    border-radius: 8px;
+    
+}
 
 
 
@@ -216,7 +241,7 @@ textarea{
 }
 
 
-.limpiar{
+/*.limpiar{
         justify-content: center;
         padding: 2%;
         background-color: var(--color_a);
@@ -232,7 +257,7 @@ textarea{
         left: 24.2%;
         
 }
-
+*/
 
 footer{
     background-color: var(--color_a);

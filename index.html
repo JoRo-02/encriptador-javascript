@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -24,7 +25,12 @@
             <div class="botones">
                 <button class="boton__encriptar" id="boton__encriptar" onclick="encriptar()">Cifrar</button>
                 <button class="boton__desencriptar" id="boton__desencriptar" onclick="desencriptar()">Descifrar</button>
-                <button class="limpiar" id="limpiar" onclick="limpiarTexto()">Limpiar</button>
+             <!-- <button class="limpiar" id="limpiar" onclick="limpiarTexto()">Limpiar</button>-->  
+              
+                    <button class="clean" id="clean"onclick="limpiarTexto()"><i class="fa fa-trash"></i></button>
+                    <button class='copy'id="copy"><i class="fa fa-clone"></i></button>
+              
+    
             </div>
   
         </section>
@@ -33,8 +39,16 @@
 
             <div class="txtarea__resultado">
                 <textarea class="texto__resultado" id="texto__resultado" readonly ></textarea>
+
+
+                <div class="slash">
+                    /
+                </div>
+
+               
             </div>
            
+            
             <div class="header__encriptado">
                 <h2 class="titulo__standby" id="titulo__standby">Ningún mensaje fue encontrado</h2>
             </div>
@@ -45,9 +59,7 @@
             
               <img class="imagen__lupa" id="imagen__lupa" src="./Assets/Lupa.png" alt="icono de una Lupa" width="160px" >
 
-              <div class="btn__limpiar">
-               
-              </div>
+        </div>
             
         </div>
   
