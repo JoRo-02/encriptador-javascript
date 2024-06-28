@@ -84,5 +84,23 @@
 
     }
 
+    function copiarTexto(){
+        let textoCopiar = document.getElementById("texto__resultado");
+        textoCopiar.select();
+        textoCopiar.setSelectionRange(0,99999)
+
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        
+        document.getElementById('copy').classList.add("active");
+        setTimeout(function(){
+            document.getElementById('copy').classList.remove("active");
+        
+        },500);
+
+        
+
+      }
+    
     
  
