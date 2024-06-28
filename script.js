@@ -13,7 +13,7 @@
             void mensajeError.offsetWidth;  
             mensajeError.classList.add("vibrar");
 
-            
+
         }else{
 
             mensajeError.classList.remove("vibrar");
@@ -28,6 +28,9 @@
                     default: return char;
                 }
             }
+
+            //la funcion regular "[aeiou]/g"  busca cualquier carácter que sea una de las vocales minúsculas: a, e, i, o, u. y se las 
+            //pasa como parametro a la function reemplazarVocales, es decir reemplazarVocales(*)
                 let textoEncriptado=textoUsuario.replace(/[aeiou]/g, reemplazarVocales);
         
                 if(textoUsuario.length != 0){
@@ -39,9 +42,7 @@
                 
                 }
         }
-
- 
-    
+   
     }
     
     function desencriptar(){
