@@ -224,6 +224,15 @@ textarea{
     
 }
 
+.slash{
+    font-size: 100px;
+    position: relative;
+    top: 65%;
+    right:44%;
+    
+    color:white;
+}
+  
 
 
 .texto__resultado{   
