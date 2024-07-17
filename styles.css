@@ -20,7 +20,7 @@ header{
 
 body{
     background-color: var(--color_a);
-    padding:10px 40px;
+    padding:10px 20px;
 }
 
 .container{
@@ -36,7 +36,7 @@ textarea{
 }
 
 .texto__usuario{
-    width: 60vw;
+    width: 55vw;
     height: 70vh;
     padding: 50px;
     border:1px solid var(--color_b);
@@ -60,6 +60,7 @@ textarea{
     font-family: 'Ubuntu Sans Mono',sans-serif;
     font-weight: 400;
     font-size: 20px;  
+    margin: 5px 0;
 }
 
 .vibrar{
@@ -156,7 +157,7 @@ textarea{
     text-align: center;
     font-family: 'Ubuntu Sans Mono', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .parrafo__encriptado{
@@ -164,7 +165,7 @@ textarea{
     text-align: center;
     font-family: 'Ubuntu Sans Mono', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .copy{
@@ -223,8 +224,7 @@ footer{
 
 .copy, .clean { 
     font-size: 40px;
-    height: 100px;
-    width: 100px;
+
 }
 
 @media (max-width:800px){
@@ -236,7 +236,7 @@ footer{
         gap:20px;
     }
     .texto__usuario{
-        width: 80vw;
+        width: 90vw;
         height: 40vh;
     }
 
