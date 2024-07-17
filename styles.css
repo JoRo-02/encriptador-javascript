@@ -227,7 +227,7 @@ footer{
 
 }
 
-@media (max-width:800px){
+@media (max-width:1024px){
 
     .container{
         display: flex;
@@ -241,13 +241,13 @@ footer{
     }
 
     .header__encriptado{
-        font-size: 14px;
+        font-size: 2rem;
     }
     p{
-        font-size: 10px;
+        font-size: 1.5rem;
     }
     .texto__guia{
-        font-size: 16px;
+        font-size: 1rem;
         margin: 10px 0;
     }
     .boton__desencriptar,.boton__encriptar{
