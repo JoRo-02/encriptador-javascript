@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
-
 :root{
     --color_a:black;     /*color fondo*/
     --color_b:#F28705;      /*bordes y extras*/
     --color_c: white;    /*color   textos*/
     --color_d: #262626;     /*color extra*/
 }
-
 
 *{
     box-sizing: border-box;
@@ -17,27 +15,19 @@
 
 header{
     background-color: var(--color_a);
-    width: 100vw;
-    position:relative;
+    margin-bottom: 20px;
 }
 
 body{
-    overflow-x: hidden; 
-}
-
-.imagen__logo{
-    position: relative;
-    right:1%;
-    margin-top: 1%;    
+    background-color: var(--color_a);
+    padding:10px 40px;
 }
 
 .container{
     background-color: var(--color_a);
-    width: 100vw;
-    height: 90vh;
-    position:relative;
+    display:flex;
+    gap: 250px;
 }
-
 
 textarea{
     background-color: var(--color_a);
@@ -51,15 +41,13 @@ textarea{
     padding: 50px;
     border:1px solid var(--color_b);
     border-radius: 32px; 
-    position: absolute;
-    left: 80px;
     color:var(--color_c);
     font-family: 'Ubuntu Sans Mono',sans-serif;
     font-size: 32px;
     font-weight: 400;
  }
 
- .texto__usuario:focus{
+.texto__usuario:focus{
     outline: #F28705;
  }
 
@@ -68,14 +56,10 @@ textarea{
  }
 
  .texto__guia{
-    position: absolute;
-    top:80.5%;
-    left:80px;
     color:var(--color_c);  
     font-family: 'Ubuntu Sans Mono',sans-serif;
     font-weight: 400;
-    font-size: 12px;
-   
+    font-size: 20px;  
 }
 
 .vibrar{
@@ -99,21 +83,13 @@ textarea{
     }
 }
 
-
 .botones{
     display: flex;
     justify-content: flex-start;
-    position: absolute;
-    width: 80%;
-    left:80px;
-    top:82%;
-    padding:1% 0;
-    gap: 24px;
-    
+    gap: 24px; 
 }
 
-.boton__encriptar {
-    justify-content: center;
+.boton__encriptar ,.boton__desencriptar {
     padding: 2%;
     background-color: var(--color_a);
     border: 1px solid var(--color_b);;
@@ -125,276 +101,176 @@ textarea{
     font-size: 16px;
 }
 
-.boton__desencriptar{
-    justify-content: center;
-    padding: 2%;
-    background-color: var(--color_a);
-    border: 1px solid var(--color_b);;
-    border-radius: 12px;
-    color: var(--color_c);
-    width: 30%;
-    font-family: 'Ubuntu Sans Mono', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-
-
 .boton__desencriptar:hover,.boton__encriptar:hover,.clean:hover, .copy:hover{
     background-color: var(--color_b);
     color:var(--color_a);
     font-weight:bold;
 }
 
-
-
-
 .area__resultado{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 22%;
+    width: 20vw;
     height: 70vh;
-    left: 76%;
+    padding:20px;
     border: 1px solid var(--color_b);;
     border-radius: 24px;
 }
 
-.imagen__lupa{
-    position: absolute;
-    top:25%;
-    right:16%;
-}
-
-.header__encriptado{
+.texto_derecha{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    gap:20px;
     width: 100%;
-    top: 60%;
+    height: 100%;
+
+}
+
+.btnFunciones{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap:50%;
+    width: 100%;
+}
+
+.texto__resultado{ 
+    width: 100%;
+    color: var(--color_c);
+    resize: none;
+    outline:none;
+    border:none;
+    display: none;
+    background: transparent;
+    font-family: 'Ubuntu Sans Mono', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--color_c);
+}
+
+.imagen__lupa{
+    margin-top: 20%;
+}
+
+.header__encriptado{
     color: var(--color_c);
     text-align: center;
     font-family: 'Ubuntu Sans Mono', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .parrafo__encriptado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    top: 72%;
     color: var(--color_c);
     text-align: center;
     font-family: 'Ubuntu Sans Mono', sans-serif;
     font-weight: 400;
-    font-size: 12px;
-}
-
-.txtarea__resultado{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-   
+    font-size: 18px;
 }
 
 .copy{
     padding: 2%;
     font-size: 20px;
-    position: relative;
-    top: 104.5%;
-    left:20%;
     background-color:black;
     color:white;
     border: 1px solid var(--color_b);
-    border-radius: 8px;
-    
+    border-radius: 8px;    
 }
 
 .copy::before{
     content: "copiado!";
-    position: absolute;
-    bottom: 110%;
-    right: -12%;
     font-size: 16px;
     font-family: 'Ubuntu Sans Mono', sans-serif;
     font-weight: 400;
     background-color:var(--color_b);
-    padding: 5%;
+    padding: 1%;
     border: 1px solid black;
     border-radius: 10px;
+    position: absolute;
     display:none;
 }
 
 .copy::after{
     content:" ";
     display:none;
-
 }
 
 .copy.active::before, .copy.active::after{
-    display: block;
+    display: inline;
 }
 
 .clean{
     padding: 2%;
     font-size: 20px;
-    position: relative;
-    top: 104.5%;
-    left:40%;
     background-color:black;
     color:white;
     border: 1px solid var(--color_b);
     border-radius: 8px;
-    
 }
 
 .clean:active, .copy:active, .boton__encriptar:active, .boton__desencriptar:active{
     background:	#ffa31a;
 }
 
-.slash{
-    font-size: 100px;
-    position: relative;
-    top: 65%;
-    right:44%;
-    
-    color:white;
-}
-  
-
-
-.texto__resultado{   
-    height: 66vh;
-    align-items: center;
-    color: var(--color_c);
-    resize: none;
-    outline:none;
-    border: none;
-    background: transparent;
-    font-family: 'Ubuntu Sans Mono', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: var(--color_c);
-}
-
-
-/*.limpiar{
-        justify-content: center;
-        padding: 2%;
-        background-color: var(--color_a);
-        border: 1px solid var(--color_b);;
-        border-radius: 12px;
-        color: var(--color_c);
-        width: 25%;
-        height: 67px;
-        font-family: 'Ubuntu Sans Mono', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        position: relative;
-        left: 24.2%;
-        
-}
-*/
-
 footer{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
     background-color: var(--color_a);
     color:gray;
     text-align: center;
     font-family: 'Ubuntu Sans Mono', sans-serif;
     font-weight: 400;
     font-size: 12px;
+    margin-top: 50px;
 }
 
-@media (max-width: 600px) {
+.copy, .clean { 
+    font-size: 40px;
+    height: 100px;
+    width: 100px;
+}
 
-    .slash{
-        display: none;
-    }
+@media (max-width:800px){
 
-    .container {
+    .container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        padding: 20px;
+        gap:20px;
+    }
+    .texto__usuario{
+        width: 80vw;
+        height: 40vh;
     }
 
-    .imagen__lupa{
-        right: 20%;
-        top:20%;
+    .header__encriptado{
+        font-size: 14px;
     }
-
-    .mensaje__standby{
-        margin:5%;
+    p{
+        font-size: 10px;
     }
-
     .texto__guia{
-        left:18%;
-      top:30.5%;
-      margin: 10px 0;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .boton__desencriptar,.boton__encriptar{
+        width: 60%;
     }
 
-    .texto__usuario {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        left: 0;
-        top: 0;
-        position: relative;
-        margin-bottom: 20px;
+    .area__resultado{
+        width: 80vw;
+        height: 60vh;
     }
 
-    .botones {
-        width: 100%;
-        left: 0;
-        top: 0;
-        position: relative;
-        justify-content: center;
+
+    .copy, .clean{
+        font-size: 30px;
+        height: 60px;
+        width: 60px;
     }
 
-    .area__resultado {
-        width: 100%;
-        height: 70%;
-        left: 0;
-        top: 0;
-        position: relative;
-        margin-top: 20px;
+    footer{
+        margin-top: 100px;
     }
 
-    .copy, .clean {
-        top: 0;
-        left: 0;
-        margin-top: 10px;
-        font-size: 25px;
-    }
 }
 
-@media (max-width: 300px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
 
-
-    .texto__usuario {
-        width: 100%;
-        height: 70%;
-        top: 2%;
-    }
-
-    .area__resultado {
-        position: absolute;
-        top: 100%;
-    }
-}
 

@@ -5,7 +5,6 @@
         let textoUsuario = document.getElementById("texto__usuario").value;
         let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>0-9]/g;
         let mensajeError= document.getElementById('texto__guia');
-
         
         if(validacionCaracteres.test(textoUsuario)){
 
@@ -29,18 +28,16 @@
                 }
             }
 
-            //la funcion regular "[aeiou]/g"  busca cualquier carácter que sea una de las vocales minúsculas: a, e, i, o, u. y se las 
-            //pasa como parametro a la function reemplazarVocales, es decir reemplazarVocales(*)
-
 
                 let textoEncriptado=textoUsuario.replace(/[aeiou]/g, reemplazarVocales);
         
                 if(textoUsuario.length != 0){
-                    
+                    document.getElementById('texto__resultado').style.display='block'
                     document.getElementById('texto__resultado').value =textoEncriptado;
                     document.getElementById('imagen__lupa').style.display = 'none';
                     document.getElementById('titulo__standby').style.display ='none';
                     document.getElementById('mensaje__standby').style.display ='none';
+                
                 
                 }
         }
@@ -51,10 +48,10 @@
 
 
     function desencriptar(){
+        
         let textoUsuarioEncriptado = document.getElementById("texto__usuario").value;
         let validacionCaracteres =/[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*(),.?":{}|<>0-9]/g;
         let mensajeError= document.getElementById('texto__guia');
-
         
         if(validacionCaracteres.test(textoUsuarioEncriptado)){
 
@@ -69,6 +66,7 @@
             .replace(/ufat/g, 'u');
 
             if (textoUsuarioEncriptado.length!= 0){
+            document.getElementById('texto__resultado').style.display='block'
             document.getElementById('texto__resultado').value = textoDescifrar;
             }
         }
@@ -81,6 +79,7 @@
         document.getElementById('imagen__lupa').style.display= 'block';
         document.getElementById('titulo__standby').style.display= 'block';
         document.getElementById('mensaje__standby').style.display= 'block';
+         document.getElementById('texto__resultado').style.display='none'
 
     }
 

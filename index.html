@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
-<header>
-    <img class="imagen__logo" src="./Assets/Logo.png" alt="logo de Alura" width="95px">
-</header>
-
 <body>
+    
+    <header>
+        <img class="imagen__logo" src="./Assets/Logo.png" alt="logo de Alura" width="95px">
+    </header>
 
     <div class="container">
        
@@ -24,47 +23,50 @@
 
             <div class="botones">
                 <button class="boton__encriptar" id="boton__encriptar" onclick="encriptar()">Cifrar</button>
-                <button class="boton__desencriptar" id="boton__desencriptar" onclick="desencriptar()">Descifrar</button>
-
-             <!-- <button class="limpiar" id="limpiar" onclick="limpiarTexto()">Limpiar</button>-->  
-              
-                    <button class="clean" id="clean"onclick="limpiarTexto()"><i class="fa fa-trash"></i></button>
-                    <button class='copy'id="copy" onclick="copiarTexto()"><i class="fa fa-clone"></i></button>
-                  
+                <button class="boton__desencriptar" id="boton__desencriptar" onclick="desencriptar()">Descifrar</button>    
             </div>
   
         </section>
 
         <div class="area__resultado">
 
-            <div class="txtarea__resultado">
-                <textarea class="texto__resultado" id="texto__resultado" readonly ></textarea>
+            <div class="texto_derecha">
 
-                <div class="slash">
-                    <p>/</p>
+                <div class="txtarea__resultado">
+                    <textarea class="texto__resultado" id="texto__resultado" readonly ></textarea>
                 </div>
- 
-            </div>
-                       
+                    
+               <div class="container_imagen">
+                <img class="imagen__lupa" id="imagen__lupa" src="./Assets/Lupa.png" alt="icono de una Lupa" width="160px" >
+                </div>
+
             <div class="header__encriptado">
                 <h2 class="titulo__standby" id="titulo__standby">Ningún mensaje fue encontrado</h2>
             </div>
-           
+
             <div class="parrafo__encriptado">
                 <p class="mensaje__standby" id="mensaje__standby">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-            
-              <img class="imagen__lupa" id="imagen__lupa" src="./Assets/Lupa.png" alt="icono de una Lupa" width="160px" >
+            </div> 
 
+            </div>
+
+            <div class="btnFunciones">
+                <button class="clean" id="clean"onclick="limpiarTexto()"><i class="fa fa-trash"></i></button>
+                <button class='copy'id="copy" onclick="copiarTexto()"><i class="fa fa-clone"></i></button>
+            </div>
+
+    
         </div>
-            
+       
         </div>
-  
+
     </div>
+
+    <footer>
+        <p>Made by Jorvis Roa</p>
+    </footer>
 
 <script src="script.js"></script>
 </body>
-<footer>
-    <p>Made by Jorvis Roa</p>
-</footer>
+
 </html>
